@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>User</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+  <style>
+   
+
+    body,
+    html {
+      height: 100%;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .bg-image {
+
+      background-image: url("https://images.unsplash.com/photo-1553095066-5014bc7b7f2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80.jpg");
+      height: 100%;
+
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+
+    .bg-text {
+      color:white;
+      font-weight: bold;
+      border: 3px solid lightskyblue;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      width: 80%;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="bg-image"></div>
+  {{!-- <div class="bg-text"> --}}
+  {{!-- <h1>USER</h1>
+    <br>
+    <br>
+    <h1>{{results.name}}</h1>
+    <br>
+    <br>
+    <h1>{{results.Account_balance}}</h1>
+    <br>
+    <br>
+    <h1>{{results.Image}}</h1>
+    <br>
+    <br>
+    <h1>{{results.FatherName}}</h1>
+    <br>
+    <br>
+    <h1>{{results.Email_id}}</h1>
+    <button onclick="window.location.href = 'http://localhost:4000/User/{{results.name}}/MoneyTransfer';" style="text-decoration:none">SEND CREDITS</button> --}}
+  <div class="bg-text">
+    <div id="1"></div>>
+    <h1 align="center" id="1"><i class="user icon"></i> USER DETAILS</h1>
+    <div class="ui centered card">
+      <div class="content">
+        <div class="header">{{results.name}} <i class="user icon"></i></div>
+      </div>
+      <div class="content">
+       
+        <div class="ui small feed" style="color: black;">
+         
+
+          Email ID : {{results.Email_id}}
+          <br>
+          <br>
+           Father's Name : {{results.FatherName}}
+          <br>
+          <br>
+          Credits left </i> : {{results.Account_balance}}
+        </div>
+      </div>
+      <div class="extra content">
+        <button  onclick="window.location.href = '/User/{{results.name}}/MoneyTransfer';">Transfer
+          Credits</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>
