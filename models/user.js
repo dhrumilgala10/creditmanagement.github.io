@@ -82,5 +82,4 @@ MongoClient.connect(MONGO_URL, (err, client) => {
   })
 })
 
-  
-})
+
