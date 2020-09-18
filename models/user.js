@@ -14,65 +14,65 @@ MongoClient.connect(MONGO_URL, (err, client) => {
   
   users.insertMany([
     {
-      name: "Ram",
-      Account_balance: 300,
-      Email_id: "ram@gmail.com",
-      FatherName:"Ram's Dad"
+      name: "Vivek",
+      Account_balance: 391,
+      Email_id: "vivek@gmail.com",
+        FatherName:"Vinay"
       
     },
     {
-        name: "Shubham",
-        Account_balance: 300,
-        Email_id: "shubham@gmail.com",
-      FatherName:"Shubham's Dad"
-      },
-      {
-        name: "Raghav",
-        Account_balance: 300,
-        Email_id: "raghav@gmail.com",
-      FatherName:"Ranghav's Dad"
-      },
-      {
-        name: "Abhishek",
-        Account_balance: 300,
-        Email_id: "abhishek@gmail.com",
-      FatherName:"Abhishek's Dad"
-      },
-      {
-        name: "Agrim",
-        Account_balance: 300,
-        Email_id: "agrim@gmail.com",
-      FatherName:"Agrim's Dad"
-      },
-      {
-        name: "Sameer",
-        Account_balance: 300,
-        Email_id: "sameer@gmail.com",
-      FatherName:"Sameer's Dad"
-      },
-      {
-        name: "Nayan",
-        Account_balance: 300,
-        Email_id: "nayan@gmail.com",
-      FatherName:"Nayan's Dad"
+        name: "Prasham",
+        Account_balance: 599,
+        Email_id: "prasham@gmail.com",
+      FatherName:"Dhiren"
       },
       {
         name: "Dhruv",
-        Account_balance: 300,
-        Email_id: "druv@gmail.com",
-      FatherName:"Dhruv's Dad"
+        Account_balance: 301,
+        Email_id: "dhruv@gmail.com",
+      FatherName:"Ajay"
+      },
+      {
+        name: "Ramesh",
+        Account_balance: 201,
+        Email_id: "ramesh@gmail.com",
+      FatherName:"Suresh"
+      },
+      {
+        name: "Aditya",
+        Account_balance: 204,
+        Email_id: "adi@gmail.com",
+      FatherName:"Amar"
+      },
+      {
+        name: "Piyush",
+        Account_balance: 700,
+        Email_id: "piyush@gmail.com",
+      FatherName:"Pankaj"
       },
       {
         name: "Harsh",
-        Account_balance: 300,
+        Account_balance: 203,
         Email_id: "harsh@gmail.com",
-      FatherName:"Harsh's Dad"
+      FatherName:"Manish"
       },
       {
-        name: "Gaurav",
+        name: "Raj",
         Account_balance: 300,
-        Email_id: "gaurav@gmail.com",
-      FatherName:"Gaurav's Dad"
+        Email_id: "raj@gmail.com",
+      FatherName:"Vipul"
+      },
+      {
+        name: "Sahil",
+        Account_balance: 201,
+        Email_id: "sahil@gmail.com",
+      FatherName:"Suresh"
+      },
+      {
+        name: "Bipin",
+        Account_balance: 300,
+        Email_id: "bipin@gmail.com",
+      FatherName:"Bakul"
       },
   ], (err, result) => {
     if (err) {
