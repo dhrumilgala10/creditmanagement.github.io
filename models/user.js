@@ -1,6 +1,6 @@
 const {MongoClient} = require('mongodb')
 const faker=require('faker')
-const MONGO_URL =  "mongodb+srv://sparks:sparks123@cluster0.bsuad.mongodb.net/<dbname>?retryWrites=true&w=majority"
+const MONGO_URL =  "mongodb+srv://sparks:sparks123@cluster0.bsuad.mongodb.net/dbuser?retryWrites=true&w=majority"
 
 
 MongoClient.connect(MONGO_URL, (err, client) => {
